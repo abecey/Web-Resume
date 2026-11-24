@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive resume and portfolio for Your Name">
+  <title>Your Name — Creative Developer</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Your Name, home">Princess Bea Roman<span>.</span></a>
+
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation">
+      <span></span><span></span>
+    </button>
+
+    <nav class="navigation" id="main-navigation" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" type="button" aria-label="Switch to light theme" title="Toggle theme">
+      <span class="theme-icon" aria-hidden="true">☼</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR OPPORTUNITIES</p>
+        <h1>Hi, I’m <span class="gradient-text">Princess Bea Roman.</span><br>I make ideas<br><span class="outline-text">interactive.</span></h1>
+        <p class="hero-description">
+          A cyber specialist who loves building thoughtful digital experiences,
+          solving interesting problems, and making the web a little more human.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+          <button class="button button-quiet print-button" type="button">Print resume <span aria-hidden="true">↗</span></button>
+        </div>
+      </div>
+
+      <div class="hero-card reveal" aria-label="Profile card">
+        <div class="card-orbit orbit-one"></div>
+        <div class="card-orbit orbit-two"></div>
+        <img class="avatar" src="profile-photo.jpg" alt="Portrait of Princess Bea Roman">
+        <div class="profile-intro">
+          <p class="profile-name">Princess Bea Roman</p>
+          <p class="profile-role">Cybersecurity Specialist</p>
+          <p class="profile-note">Curious about building safer digital experiences.</p>
+        </div>
+        <p class="card-label">CURRENTLY</p>
+        <h2>Making useful things<br>for curious people.</h2>
+        <div class="card-bottom"><span>📍Quezon City, Manila</span><span>✦ Open to work</span></div>
+      </div>
+
+      <a class="scroll-hint" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="content-section section-wrap reveal" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">01 / THE SHORT VERSION</p>
+        <h2>A little about <span class="gradient-text">About me.</span></h2>
+      </div>
+      <div class="about-grid">
+        <p class="about-lead">
+          I turn complex challenges into clear, engaging experiences.
+        </p>
+        <div class="about-details">
+          <p>
+            I’m a [role] with experience in [your area of expertise]. I enjoy
+            working with good people, learning new things, and seeing a project
+            through from the first sketch to the final details.
+          </p>
+          <div class="skill-list" aria-label="Skills">
+            <span>Creative thinking</span><span>Problem solving</span>
+            <span>[Skill / Tool]</span><span>[Skill / Tool]</span>
+            <span>[Skill / Tool]</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap reveal" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">02 / WHERE I’VE BEEN</p>
+        <h2>The experience <span class="gradient-text">so far.</span></h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-date">2023 — NOW</div>
+          <div>
+            <h3>[Your Job Title] <span>@ [Company]</span></h3>
+            <p>Describe what you do and the impact you make. Add a specific achievement, result, or project you’re proud of.</p>
+            <div class="tag-row"><span>[Skill]</span><span>[Tool]</span><span>[Area]</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-date">2021 — 2023</div>
+          <div>
+            <h3>[Previous Job Title] <span>@ [Company]</span></h3>
+            <p>Share another achievement. Focus on what changed because of your work, not just your day-to-day duties.</p>
+            <div class="tag-row"><span>[Skill]</span><span>[Tool]</span></div>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div class="timeline-date">2017 — 2021</div>
+          <div>
+            <h3>[Degree or Qualification] <span>@ [School]</span></h3>
+            <p>[Field of study, notable coursework, or a detail you’d like employers to know.]</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section section-wrap reveal" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">03 / THINGS I’VE MADE</p>
+        <h2>Selected <span class="gradient-text">projects.</span></h2>
+      </div>
+
+      <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="filter-button active" data-filter="all" aria-pressed="true">All</button>
+        <button class="filter-button" data-filter="design" aria-pressed="false">Design</button>
+        <button class="filter-button" data-filter="development" aria-pressed="false">Development</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card" data-category="development">
+          <div class="project-art art-purple"><span>✳</span><small>01 / WEB APP</small></div>
+          <div class="project-info">
+            <div><h3>[Project One]</h3><p>A short description of what you built and why.</p></div>
+            <a href="#contact" aria-label="Ask about Project One">↗</a>
+          </div>
+          <div class="tag-row"><span>JavaScript</span><span>Web app</span></div>
+        </article>
+
+        <article class="project-card" data-category="design">
+          <div class="project-art art-orange"><span>◒</span><small>02 / BRAND DESIGN</small></div>
+          <div class="project-info">
+            <div><h3>[Project Two]</h3><p>A short description of the challenge and your approach.</p></div>
+            <a href="#contact" aria-label="Ask about Project Two">↗</a>
+          </div>
+          <div class="tag-row"><span>Design</span><span>Research</span></div>
+        </article>
+
+        <article class="project-card" data-category="development">
+          <div class="project-art art-green"><span>⌘</span><small>03 / SIDE PROJECT</small></div>
+          <div class="project-info">
+            <div><h3>[Project Three]</h3><p>A personal project that shows what you enjoy making.</p></div>
+            <a href="#contact" aria-label="Ask about Project Three">↗</a>
+          </div>
+          <div class="tag-row"><span>[Technology]</span><span>Creative coding</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap reveal" id="contact">
+      <p class="eyebrow">04 / YOUR TURN</p>
+      <h2>Have a good project<br>in <span class="gradient-text">mind?</span></h2>
+      <p>I’m always happy to hear about interesting people and projects.</p>
+      <div class="contact-actions">
+        <a class="button button-primary" href="mailto:romanbea2519@gmail.com">Let’s talk <span aria-hidden="true">↗</span></a>
+        <button class="button button-quiet copy-email" type="button" data-email="romanbea@gmail.com">Copy my email</button>
+      </div>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/bea-roman-1a8a27309/">LinkedIn ↗</a>
+        <a href="https://github.com/princessbearoman?tab=overview&from=2025-12-01&to=2025-12-31">GitHub ↗</a>
+        <a href="https://www.facebook.com/bea.romannn">Facebook ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap">
+    <span>Designed & built by Princess Bea Roman</span>
+    <span>© <span id="year"></span> — Made with curiosity ✳</span>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
